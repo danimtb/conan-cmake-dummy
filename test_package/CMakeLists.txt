@@ -5,6 +5,7 @@ project(test_dummy
 )
 
 find_package(dummy REQUIRED)
+message("dummy_MODULE_PATH: ${dummy_MODULE_PATH}")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${dummy_MODULE_PATH})
 
 include(my-super-cmake-file)
