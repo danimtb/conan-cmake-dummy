@@ -6,11 +6,8 @@ class DummyTestConan(ConanFile):
     generators = "cmake_find_package"
     requires = "dummy/1.0@demo/testing"
 
-    def configure_cmake(self):
-        cmake = CMake(self)
-        cmake.configure()
-
-        return cmake
+    def build_requirements(self):
+        self.build_requires("dummy/1.0@demo/testing")
 
     def build(self):
         self.cmake = CMake(self)
