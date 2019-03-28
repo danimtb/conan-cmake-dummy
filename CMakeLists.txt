@@ -7,6 +7,6 @@ project(dummy
 
 include(GNUInstallDirs)
 
-install(FILES dummy-config.cmake my-super-cmake-file.cmake
-	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
-)
+#install(FILES dummy-config.cmake my-super-cmake-file.cmake
+#	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
+#)
